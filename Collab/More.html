@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Dashboard</title>
+  <link rel="stylesheet" href="More.css">
+  <script src="https://kit.fontawesome.com/ccd9f123d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="dropdown">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" style="height: 45px; vertical-align: middle; margin-right: 5px; margin-bottom: 15px;">
+        <i class="fa fa-caret-down dropdown-toggle" style='font-size:36px; color: white;'></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">About Us</a>
+        <a href="#">Adoption</a>
+        <a href="#">Pets</a>
+        <a href="#">Donations</a>
+      </div>
+    </div> 
+    <button class="login"><a href="Login.html">Login</a></button>
+  </nav>  
+
+  <div class="pet-container" id="pet-container">
+    <!-- Original pet card template -->
+    <div class="pet-card">
+      <img src="dog2.jpg" alt="Pet Image">
+      <h2>Name: Bruno</h2>
+      <p>Breed: Golden retrievers</p>
+      <p>Age: 5years</p>
+      <p>Golden retrievers are extremely friendly and eager-to-please, which is why they're amazing family dogs and service dogs.3
+        American Kennel Club. Golden Retriever.</p>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+
+    <div class="pet-card">
+      <img src="dog6.jpg" alt="Pet Image">
+      <h2>Name: Murphy</h2>
+      <p>Breed: Shiba Inu</p>
+      <p>Age: 5years</p>
+      <p>The popular doge meme caused the internet fall in love with Shiba Inus. One look at that fluffy face and it's hard not to agree that they're "amaze."</p>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+
+    <div class="pet-card">
+      <img src="dog3.jpg" alt="Pet Image">
+      <h2>Name: Bruno</h2>
+      <p>Breed: Pembroke Welsh Corgi</p>
+      <p>Age: 2years</p>
+      <p>Trust the Queen of England to have an excellent taste in dogs. Elizabeth II's love for corgis goes unmatched — she's had over 30 of them in her lifetime!</p>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+
+    <div class="pet-card">
+      <img src="dog5.png" alt="Pet Image">
+      <h2>Name: Sheru</h2>
+      <p>Breed: Siberian Husky</p>
+      <p>Age: 5years</p>
+      <p>These graceful guys are extremely athletic and energetic, so you need to be able to give them the exercise they crave. They're outgoing and can be slightly mischievous.</p>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="about-us">
+      <h2><i class="fa-solid fa-dog">&nbsp; Pedaptar</i></h2>
+      
+      <p>Address: Kathmandu, Nepal<br> Email: pedaptar88@gmail.com<br> Contact Number: +01 664992</p>
+      <p>Add a family member with a pet. Both'll get family<br>With Love Petadaptar</p>
+      <div>
+        <span><u>67</u> Pets adopted, <u>200</u> pets remaining </span>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.dropdown-toggle').click(function(){
+    $(this).closest('.dropdown').toggleClass('active');
+  });
+});
+</script>
+
+</html>

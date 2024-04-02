@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ccd9f123d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="dropdown">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" style="height: 45px; vertical-align: middle; margin-right: 5px; margin-bottom: 15px;">
+        <i class="fa fa-caret-down dropdown-toggle" style='font-size:36px; color: white;'></i>
+      </div>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="More.html">Adoption</a></li>
+          <li><a href="More.html">Pets</a></li>
+          <li><a href="Donation.html">Donations</a></li>
+        </ul>
+      </div>
+    </div> 
+    <button class="login"><a href="Login.html">Login</a></button>
+  </nav> 
+
+  <div class="content">
+    <div class="dog-scroll">
+      <img id="image" src="" alt="Dog">
+    </div>
+    <div class="adoption-info">
+      <h2>Adoption and Fostering</h2>
+      <p><b>Adoption</b> means providing a shelter dog with a permanent caring home with a family for the rest of its life. We try our best to match dogs with suitable owners and homes, and where possible, undertake follow-up visits to ensure that the dog is well and happy in its environment.</p>
+      <p><b>Fostering</b> means providing shelter dogs, particularly puppies, with a temporary but stable and caring home with a family for a few months. This provides the dog with individual care until such time as it is fully vaccinated, adopted, or the foster carer must move on</p>
+    </div>
+  </div>
+
+  <h2 style="text-align: center;"><b>Pets Available for Adoption </b><a href="More.html"><i class="fa-solid fa-angles-right"></i></a></i></h2>
+
+  <div class="pet-container" id="pet-container">
+    <div class="pet-card">
+      <img src="dog2.jpg" alt="Pet Image">
+      <h2>Name: Bruno</h2>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+
+    <div class="pet-card">
+      <img src="dog6.jpg" alt="Pet Image">
+      <h2>Name: Murphy</h2>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+
+    <div class="pet-card">
+      <img src="dog3.jpg" alt="Pet Image">
+      <h2>Name: Bruno</h2>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+
+    <div class="pet-card">
+      <img src="dog5.png" alt="Pet Image">
+      <h2>Name: Sheru</h2>
+      <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="about-us">
+      <h2><i class="fa-solid fa-dog">&nbsp; Pedaptar</i></h2>
+      
+      <p>Address: Kathmandu, Nepal<br> Email: pedaptar88@gmail.com<br> Contact Number: +01 664992</p>
+      <p>Add a family member with a pet. Both'll get family<br>With Love Petadaptar</p>
+      <div>
+        <span><u>67</u> Pets adopted, <u>200</u> pets remaining </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-toggle').click(function(){
+        $(this).closest('.dropdown').toggleClass('active');
+      });
+    });
+
+
+
+  </script>
+</body>
+</html>
