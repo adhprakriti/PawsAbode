@@ -1,0 +1,83 @@
+/* Add your CSS styles for pet-details.html here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    background-color: #f79506 ;
+    padding: 5px 0;
+    text-align: left;
+  }
+  
+  .logo {
+    max-width: 200px;
+    padding: 5px;
+  }
+  
+  .pet-details-container {
+    background-color: #92b6f0;
+    min-width: 1000px; 
+    position: relative;
+    margin: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .pet-details {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px; 
+  }
+  
+  
+  .pet-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .adopt-now {
+    background-color: #f79506 ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adopt-now:hover {
+    background-color: #d98d00 ;
+  }
+  
+  .adopt-now a {
+    text-decoration: none;
+    color: white;
+  } 
+  
+  
+  .footer {
+    background-color: #f79506 ;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .about-us {
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    margin-bottom: 20px;
+  }
