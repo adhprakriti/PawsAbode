@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   font-family: Arial, sans-serif;
 
+
 }
 
 .container {
@@ -27,7 +28,7 @@ html, body {
 }
 
 .navbar {
-  background-color: #92b6f0;
+  background-color: white;
   color: white;
   padding: 20px;
   max-height: 15px;
@@ -35,7 +36,7 @@ html, body {
 }
 
 .homebtn{
-  background-color: #f79506;
+  background-color: #92b6f0;
   color: white;
   padding: 5px 20px;
   font-size: 16px;
@@ -45,7 +46,7 @@ html, body {
 }
 
 .homebtn :hover{
-  background-color: #d98d00; 
+  background-color: #a592f0; 
 }
 
 .dropdown {
@@ -54,7 +55,7 @@ html, body {
 }
 
 .dropbtn {
-  background-color: #f79506;
+  background-color: #92b6f0;
   color: white;
   padding: 5px 20px;
   font-size: 16px;
@@ -87,12 +88,15 @@ html, body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #d98d00;
+  background-color: #92b6f0;
 }
 
 
 .content {
-  background-color: #afb3b2;
+  /* background-color: #afb3b2; */
+  background-image: url('backgroundImg.avif');
+  background-repeat: no-repeat;
+
 }
 
 
@@ -134,7 +138,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   bottom: 50px; 
-  background-color: #f79506;
+  background-color: #92b6f0;
   color: white;
   border: none;
   padding: 20px 55px;
@@ -146,7 +150,7 @@ html, body {
 
 
 .adopt-now-button:hover {
-  background-color: #d98d00;
+  background-color: #92b6f0;
 }
 
 .adopt-now-button a {
@@ -176,7 +180,7 @@ html, body {
 
 
 .pet-section {
-  background-color: #92b6f0;
+  background-color: white;
   padding: 40px 0;
 }
 
@@ -201,12 +205,19 @@ html, body {
   width: calc(23% - 10px); 
 }
 
+
+/* Hya chai image lai liyera kaam garnu parne jasto dekhinxa */
 .pet-card img{
     width: 100%;
     height: 200px;;
 }
 
 
+
+/* Here, hovering added */
+.pet-card:hover {
+  transform: scale(1.05);
+}
 
 .footer {
   background-color: #f79506 ;
