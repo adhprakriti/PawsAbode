@@ -1,9 +1,8 @@
 <?php
-// Assuming you've configured your database connection settings
-$host = 'localhost'; // or your host
-$dbname = 'pet_adoption';
-$username = 'your_username';
-$password = 'your_password';
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "adoptionform";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
