@@ -109,6 +109,10 @@ body {
     height: 200px;;
 }
 
+.pet-card:hover{
+    transform: scale(1.05);
+}
+
 .adopt-button {
   background-color: purple; /* Set button background color to purple */
   color: rgb(17, 3, 3); /* Set button text color to white */
