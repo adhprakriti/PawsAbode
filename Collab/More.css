@@ -4,7 +4,7 @@ body {
   }
   
   nav {
-    background-color: purple;
+    background-color: #f79506;
     color: white;
     margin: auto;
     height: 40px;
@@ -68,8 +68,8 @@ body {
   }
   
   .login {
-    background-color: white; /* Set button background color to purple */
-    color: purple; /* Set button text color to white */
+    background-color: white; /* Set button background color to #f79506 */
+    color: #f79506; /* Set button text color to white */
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -114,7 +114,7 @@ body {
 }
 
 .adopt-button {
-  background-color: purple; /* Set button background color to purple */
+  background-color: #f79506; /* Set button background color to #f79506 */
   color: rgb(17, 3, 3); /* Set button text color to white */
   border: none;
   padding: 10px 20px;
