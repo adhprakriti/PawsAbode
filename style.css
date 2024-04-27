@@ -92,12 +92,6 @@ html, body {
 }
 
 
-.content {
-  /* background-color: #afb3b2; */
-  background-image: url('backgroundImg.avif');
-  background-repeat: no-repeat;
-
-}
 
 
 .adoption-info {
@@ -178,7 +172,15 @@ html, body {
   color: white;
 } 
 
-
+/*CSS for background Image*/
+.bg-IMG {
+  background-color: white;
+  background-image: url("backgroundImg.avif");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
 .pet-section {
   background-color: white;
   padding: 40px 0;
