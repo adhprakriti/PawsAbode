@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
   <link rel="stylesheet" href="form.css">
+  <style>
+
+    button[type="submit"]:hover {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -15,7 +21,7 @@
     <div class="form-container">
       <div class="form-card">
         <h2>Form</h2>
-        <form>
+        <form action="thankyou.html" method="post">
           <label for="fullName">Full Name</label><br>
           <input type="text" id="fullName" name="fullName" placeholder="Enter Your Name" required> <br><br>
           
@@ -34,12 +40,10 @@
           <label for="questions">Any Queries</label><br>
           <textarea id="questions" name="questions"></textarea><br><br>
 
-          <button class = "send" type="submit">SUBMIT</button>
+          <button type="submit">SUBMIT</button>
         </form>
       </div>
     </div>
   </div>
-
-  <script src="signup.js"></script>
 </body>
 </html>

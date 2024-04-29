@@ -21,20 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $vaccinations = filter_var($vaccinations, FILTER_VALIDATE_INT);
     $special_needs = filter_var($special_needs, FILTER_SANITIZE_STRING);
 
-    // Validate the form data (add more validation as needed)
+    // Validate the form data 
     if (empty($pet_id) || empty($name) || empty($species) || empty($breed) || empty($age) || empty($gender)) {
         echo "All fields are required.";
         exit;
     }
 
-    
+    // Database credentials
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "adoptionform";
-
-
-    $conn = new mysqli($servername, $username, $password, $database);
+    $dbname = "adoptionform"; 
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Check connection
     if ($conn->connect_error) {
@@ -46,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($sql);
 
     // Bind parameters
-    $stmt->bind_param("sssiisssi", $name, $species, $breed, $age, $gender, $vaccinations, $special_needs, $pet_id);
+    $stmt->bind_param("sssiissi", $name, $species, $breed, $age, $gender, $vaccinations, $special_needs, $pet_id); // Changed "iis" to "i"
 
     // Execute the statement
     if ($stmt->execute()) {
@@ -55,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error updating pet details: " . $conn->error;
     }
 
-    // Close the connection
+    // Close the statement and connection
     $stmt->close();
     $conn->close();
 }

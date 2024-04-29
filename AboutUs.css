@@ -1,0 +1,80 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f79506;
+    padding: 5px 0;
+    text-align: left;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #4979c7;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+  }
+
+  
+  /* About Us Section */
+  .about-us-section {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+  }
+  
+  .about-us-section h2{
+    text-align: center;
+  }
+  
+  .about-us-section p, ul {
+    margin: 10px 0;
+  }
+  
+  .about-us-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #f79506;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .about-us h2 {
+    text-align: center;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .stats span {
+    margin: 0 10px;
+  }
+  
