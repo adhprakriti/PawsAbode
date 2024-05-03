@@ -1,7 +1,7 @@
 <?php
-//Start session
-session_start();
-$user = $_SESSION['user'];
+    //Start session
+    session_start();
+    $user = $_SESSION['user'];
 ?>
 
 
