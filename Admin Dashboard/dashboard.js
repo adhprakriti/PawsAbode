@@ -1,4 +1,6 @@
-
+// This file is still needed to be edited for the backend part.
+// This file works with the database count for available and adopted pets.
+// It is just a dummy js file, backend developer can work with this.
 
 function toggleMenu() {
     var menuItems = document.getElementById("menuItems");
