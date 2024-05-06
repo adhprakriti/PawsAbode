@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-right: 0;
   font-family: Arial, sans-serif;
 
 
@@ -35,7 +36,7 @@ html, body {
 
 }
 
-.homebtn{
+.navitems button{
   background-color: #92b6f0;
   color: white;
   padding: 5px 20px;
@@ -43,18 +44,19 @@ html, body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  float:left;
 }
 
-.homebtn :hover{
+.navitems :hover{
   background-color: #a592f0; 
 }
 
-.dropdown {
+/* .dropdown {
   position: relative;
   display: inline-block;
-}
+} */
 
-.dropbtn {
+/* .dropbtn {
   background-color: #92b6f0;
   color: white;
   padding: 5px 20px;
@@ -62,17 +64,17 @@ html, body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-}
+} */
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
-}
+} */
 
-.dropdown-content a {
+/* .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -89,8 +91,53 @@ html, body {
 
 .dropdown:hover .dropbtn {
   background-color: #92b6f0;
+} */
+
+.about-us{
+  float:right;
+  background-color: #92b6f0;
+  color: white;
+  padding: 5px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
+.about-us :hover {
+  background-color: #a592f0; 
+}
+
+.pet-search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-30%);
+  display: flex;
+  justify-content: flex-end; /* Align the search bar to the right */
+  width: 250px;
+  /* margin: 0 auto; */
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  /* float:right; */
+  
+}
+
+.pet-search input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.pet-search button  {
+  padding: 6px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #f79506;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
 
 
@@ -172,15 +219,27 @@ html, body {
   color: white;
 } 
 
-/*CSS for background Image*/
-.bg-IMG {
+/* added background picture */
+.bg-IMG  {
   background-color: white;
   background-image: url("backgroundImg.avif");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  /* background-co: rgba(0,0,0,0.5); */
   
+}
+
+/* .over-lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+} */
+
+
 .pet-section {
   background-color: white;
   padding: 40px 0;
