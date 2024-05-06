@@ -3,150 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paws Abode - Pet Adoption Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/ccd9f123d5.js" crossorigin="anonymous"></script>
+  <title>Pet Adoption System</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="Collab/logo.png" alt="Logo" class="logo">
-      <h2>Paws Abode</h2>
-    </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Login/Signup</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav class="navbar">
-    <div class="container">
-      <button class="homebtn">Home</button>
-      <div class="dropdown">
-            <button class="dropbtn">Adopt Now</button>
-            <div class="dropdown-content">
-                <a href="More.html">Adoption</a>
-                <a href="More.html">Pets</a>
-                <a href="Donation.html">Donations</a>
-            </div>
-        </div>
-      <a href = "about-us.html">About-Us</a>
-    </div>
- </nav>
-
-  <div class="content">
-    <div class="slideshow-container">
-      <div class="slide fade">
-        <img src="dog11.jpg" style="width:100%">
-        <button class="adopt-now-button">
-        <a href="Form.html">Adopt Now</a></button>
-      </div>
-      <div class="slide fade">
-        <img src="cat1.jpg" style="width:100%">
-        <button class="adopt-now-button"><a href="Form.html">Adopt Now</a></button>
-      </div>
-      <div class="slide fade">
-        <img src="dog12.jpg" style="width:100%">
-        <button class="adopt-now-button"><a href="Form.html">Adopt Now</a></button>
-      </div>
-      <div class="slide fade">
-        <img src="cat2.jpg" style="width:100%">
-        <button class="adopt-now-button"><a href="Form.html">Adopt Now</a></button>
-      </div>
-    </div>
-
-    <div class="adoption-info">
-      <div class="container">
-        <h2>Adoption and Fostering</h2>
-        <p>At Paws Abode, we believe in finding loving homes for every pet. Our adoption process is designed to match pets with caring owners, while our fostering program provides temporary care for pets in need.</p>
-      </div>
-    </div>
-
-    <div class="pet-section">
-<!--       Added class = bg-IMG for background image in the pet-section -->
-      <div class = "bg-IMG">
-      <div class="container">
-        <h2 class="section-heading">Pets Available for Adoption <a href="Collab/More.html"></a></h2>
-        <div class="pet-container" id="pet-container">
-
-          <div class="pet-card">
-            <img src="images-pets/dog2.jpg" alt="Pet Image">
-            <h2>Name: Brownie</h2>
-            <h1>Age: 2 years</h1>
-            <h1>Color: Brown</h1>
-            <h1>Breed: Labrador Retriever</h1>
-            <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+  <main>
+    <section class="yellow-section">
+      <div class="wave"></div>
+      <div class="filters">
+        <form id="filter-form">
+          <div>
+            <label for="species">Species:</label>
+            <select id="species">
+              <option value="">Select species</option>
+              <option value="dogs">Dogs</option>
+              <option value="cats">Cats</option>
+            </select>
           </div>
-      
-          <div class="pet-card">
-            <img src="images-pets/dog6.jpg" alt="Pet Image">
-            <h2>Name: Murphy</h2>
-            <h1>Age: 2 years</h1>
-            <h1>Color: Brown</h1>
-            <h1>Breed: Akita Inu</h1>
-            <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+          <div id="breed-filter">
+            <label for="breed">Breed:</label>
+            <select id="breed">
+              <option value="">Select breed</option>
+            </select>
           </div>
-      
-          <div class="pet-card">
-            <img src="images-pets/dog3.jpg" alt="Pet Image">
-            <h2>Name: Bruno</h2>
-            <h1>Age: 2 years</h1>
-            <h1>Color: Brown</h1>
-            <h1>Breed: Akita Inu</h1>
-            <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+          <div>
+            <label for="color">Color:</label>
+            <select id="color">
+              <option value="">Select color</option>
+              <option value="color1">Color 1</option>
+              <option value="color2">Color 2</option>
+              <option value="color3">Color 3</option>
+              <option value="color4">Color 4</option>
+              <option value="color5">Color 5</option>
+            </select>
           </div>
-
-          <div class="pet-card">
-            <img src="images-pets/cat1.jpg" alt="Pet Image">
-            <h2>Name: Miley</h2>
-            <h1>Age: 3 years</h1>
-            <h1>Color: Black&White</h1>
-            <h1>Breed: IDK</h1>
-            <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+          <div>
+            <label for="sex">Sex:</label>
+            <select id="sex">
+              <option value="">Select sex</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
           </div>
-
-          <div class="pet-card">
-            <img src="images-pets/dog5.png" alt="Pet Image">
-            <h2>Name: Alpine </h2>
-            <h1>Age: 2 years</h1>
-            <h1>Color: Orange</h1>
-            <h1>Breed: Kukur</h1>
-            <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+          <div>
+            <label for="age">Age:</label>
+            <input type="text" id="age" placeholder="e.g. 3 years">
           </div>
-
-          <div class="pet-card">
-            <img src="images-pets/cat2.jpg" alt="Pet Image">
-            <h2>Name: Ralph</h2>
-            <h1>Age: 4 years</h1>
-            <h1>Color: Brown</h1>
-            <h1>Breed: Cat<h1>
-            <button class="adopt-button"><a href="Form.html">Adopt Now</a></button>
+          <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="e.g. New York">
           </div>
-          
-        </div>
+          <button type="submit">Search</button>
+          <button type="reset">Reset</button>
+        </form>
       </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="about-us">
-        <h2>Paws Abode</h2>
-        <p>Address: Kathmandu, Nepal<br>Email: pedaptar88@gmail.com<br>Contact Number: +01 664992</p>
-        <p>Join us in our mission to provide homes for every pet. Together, we can make a difference.</p>
-        <div class="stats">
-          <span><strong>67</strong> Pets adopted</span>
-          <span><strong>200</strong> Pets remaining</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-<script src="script.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("about-us").addEventListener("click", function(e) {
-      e.preventDefault(); // Prevent the default action of the link
-      document.querySelector(".dropdown-content").classList.toggle("active");
-    });
-  });
-</script>
-
+    </section>
+    <section class="cards">
+      <!-- Animal cards will be inserted here by JavaScript -->
+    </section>
+  </main>
+  <script src="scripts.js"></script>
 </body>
 </html>
