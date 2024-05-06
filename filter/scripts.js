@@ -1,3 +1,5 @@
+// JS Code for card generator
+
 // Animal constructor function
 function Animal(name, species, breed, color, sex, age, location, image) {
   this.name = name;
