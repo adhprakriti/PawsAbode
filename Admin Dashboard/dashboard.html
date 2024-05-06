@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <div class="sidebar">
@@ -27,12 +27,42 @@
                 <a href="settings.php">Settings</a>
                 <a href="logout.php">Logout</a>
             </div>
+            
+
         </header>
-        <div class="dashboard">
+
+        <!-- cards for availability and adaptability -->
+
+        <div class = "card available-pets">
+            <h2>Available Number of Pets</h2>
+            <p id = "availble-cats-count">Loading...</p>
+        </div>
+        
+        <div class = "card adopted-pets">
+            <h2>Adopted Number of Pets</h2>
+            <p id = "adopted-cats-count">Loading...</p>
+        </div>
+        <!-- <div class="dashboard">
             <div class="card">Available Pets: <span id="availablePets">0</span></div>
             <div class="card">Adopted Pets: <span id="adoptedPets">0</span></div>
             <div class="card">Adoption Forms Submitted: <span id="formsSubmitted">0</span></div>
-        </div>
+        </div> -->
+
+        <table class = "pet-details">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Species</th>
+                    <th>Age</th>
+                    <th>Color</th>
+                    <th>Sex</th>
+                    <th>Breed</th>
+                </tr>
+            </thead>
+            <tbody id = "pet-details-body">
+                <!-- Data will be fileld dynamically using PHP -->
+            </tbody>
+        </table>
     </div>
     <script src="dashboard.js"></script>
 </body>
