@@ -1,0 +1,67 @@
+<!--HTML file for about us page  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Paws Abode</title>
+    <link rel="stylesheet" href="about-us.css">
+    <!-- <script src="https://kit.fontawesome.com/ccd9f123d5.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="Collab/logo.png" alt="Logo" class="logo">
+            <h2>Paws Abode</h2>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><button class="homebtn">Home</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Adopt Now</button>
+                <div class="dropdown-content">
+                    <a href="More.html">Adoption</a>
+                    <a href="More.html">Pets</a>
+                    <a href="Donation.html">Donations</a>
+                </div>
+            </div>
+<!--             <button class="homebtn about-us-btn">About Us</button> -->
+        </div>
+    </nav>
+    <main class="about-us-content">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Paws Abode, we are dedicated to finding loving homes for every pet. Our team of dedicated volunteers and staff work tirelessly to care for and rehabilitate animals in need, and to match them with caring owners who will provide them with a forever home.</p>
+            <p>We believe that every pet deserves a loving home, and we are committed to making that a reality for as many animals as possible. Our adoption process is designed to ensure that every pet is matched with the right owner, and our fostering program provides temporary care for pets in need until they can find their forever home.</p>
+            <p>Join us in our mission to provide homes for every pet. Together, we can make a difference.</p>
+            <div class="stats">
+                <span><strong>67</strong> Pets adopted</span>
+                <span><strong>200</strong> Pets remaining</span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>Paws Abode</h2>
+                <p>Address: Kathmandu, Nepal<br>Email: pedaptar88@gmail.com<br>Contact Number: +01 664992</p>
+                <p>Join us in our mission to provide homes for every pet. Together, we can make a difference.</p>
+                <div class="stats">
+                    <span><strong>67</strong> Pets adopted</span>
+                    <span><strong>200</strong> Pets remaining</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("about-us").addEventListener("click", function(e) {
+                e.preventDefault(); // Prevent the default action of the link
+                document.querySelector(".dropdown-content").classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+/*CSS file for about-us page */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #f79506;
+    padding: 5px 0;
+    text-align:left;
+}
+
+.header li{
+    display: inline-block;
+}
+
+.logo {
+    max-width: 200px;
+    padding: 5px;
+}
+
+.navbar {
+    background-color: white;
+    color: white;
+    padding: 20px;
+    max-height: 15px;
+}
+
+.homebtn{
+    background-color: #92b6f0;
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.homebtn :hover{
+    background-color: #a592f0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #92b6f0;
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #92b6f0;
+}
+
+.content {
+    /* background-color: #afb3b2; */
+    background-image: url('backgroundImg.avif');
+    background-repeat: no-repeat;
+}
+
+.adoption-info {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+}
+
+.adoption-info h2 {
+    text-align: center;
+}
+
+.adoption-info p {
+    text-align: center;
+}
+
+.slideshow-container {
+    min-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slide.fade img{
+    width: 100%;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.adopt-now-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    background-color: #92b6f0;
+    color: white;
+    border: none;
+    padding: 20px 55px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.adopt-now-button:hover {
+    background-color: #92b6f0;
+}
+
+.adopt-now-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.adopt-button {
+    background-color: #92b6f0 ;
+    color: #f79506;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+    background-color: #6299f2 ;
+}
+
+.adopt-button a {
+    text-decoration: none;
+    color:white;
+}
+
+.pet-section {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pet-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pet-card {
+    background-color:#f79506;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(23% - 10px);
+}
+
+/* Hya chai image lai liyera kaam garnu parne jasto dekhinxa */
+.pet-card img{
+    width: 100%;
+    height: 200px;;
+}
+
+/* Here, hovering added */
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #f79506;
+    color: white;
+    padding: 40px 0;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+}
+
+.stats span {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .dropdown i {
+        display: none;
+    }
+
+    .dropdown-content {
+        top: 100%;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
