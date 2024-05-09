@@ -1,0 +1,236 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .sidebar h2 {
+    color: #ff9900;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .sidebar a:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  .card {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  .card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .hamburger-menu {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto; /* Pushes the menu to the right */
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+  }
+  
+  .menu-items {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .menu-items a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  .menu-items a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Add-Pet Form Styling */
+  .form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .pet-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3498db;
+  }
+  
+  .sidebar a.active {
+    background-color: #34495e;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide sidebar by default on mobile */
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  
+    .form-container {
+      width: auto;
+    }
+  }
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+  }
+  
+  .form-group label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .form-group label input[type="radio"],
+  .form-group label input[type="checkbox"] {
+    margin-right: 5px;
+  }        
+  
+  /*For Submitted Forms
+  h1 {
+      color: rgb(7, 90, 107);
+  }
+  
+  table {
+      border-collapse: collapse;
+      width: 100%;
+  }*/
+
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Add position relative */
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    position: absolute;
+    margin-top: 100px;
+    left: 210px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+    z-index: 1; /* Ensure the table is above other content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Add styles for smaller screens */
+    table {
+        position: static; /* Reset position for smaller screens */
+        margin-top: 20px; /* Add margin to separate table from other content */
+    }
+}
+  
+  th,
+  td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+  
+  th {
+      background-color: rgb(90, 173, 165);
+  }
+
+  
